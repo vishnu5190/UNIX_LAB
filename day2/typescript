@@ -1,0 +1,305 @@
+Script started on Tue Nov 15 18:55:06 2022
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034h$ ls
+typescript
+$ s[Kmkdir dir1 dir2
+$ ls
+dir1		dir2		typescript
+$ cd dir1
+$ ls
+$ touch file1.text
+$ ls
+file1.text
+$ cat > file1.text
+hello
+i   am vishnu
+i a am done with this life
+
+^D$ ls
+file1.text
+$ cat file1.text 
+hello
+i am vishnu
+i am done with this life
+
+$ clear
+[H[2J$ ls
+file1.text
+$ cd ..
+$ ls
+dir1		dir2		typescript
+$ cd dir1/
+$ ls
+file1.text
+$ cat > file2.text
+hee llo th  
+this is file2 
+i want to go back to normal life
+^D$ ls
+file1.text	file2.text
+$ cat file2.text 
+hello 
+this is file2 
+i want to go back to normal life
+$ clear
+[H[2J$ ls
+file1.text	file2.text
+$ cat > filr[Ke1[K3.text
+hello
+this is the third file
+^D$ 
+$ clear
+[H[2J$ ls
+file1.text	file2.text	file3.text
+$ clear
+[H[2J$ cp [K[K[Kcat file2.text 
+hello 
+this is file2 
+i want to go back to normal life
+$ cat file1.text 
+hello
+i am vishnu
+i am done with this life
+
+$ cp file1.text file2.text 
+$ cat file2.text 
+hello
+i am vishnu
+i am done with this life
+
+$ file[K[K[K[Kcat file1.text 
+hello
+i am vishnu
+i am done with this life
+
+$ ls
+file1.text	file2.text	file3.text
+$ cd ..
+$ ls
+dir1		dir2		typescript
+$ cd f[Kdir2/
+$ ls
+$ cd [K[K[Kcd ..
+$ ls
+dir1		dir2		typescript
+$ cd dir1/
+$ ls
+file1.text	file2.text	file3.text
+$ cp file2.text ../dir2/
+$ cd ..[K[K..
+$ ls
+dir1		dir2		typescript
+$ di[K[Kcd dir3[K2/
+$ ls
+file2.text
+$ cat file2.text 
+hello
+i am vishnu
+i am done with this life
+
+$ cler[Kar
+[H[2J$ ls
+file2.text
+$ cd ..
+$ ls
+dir1		dir2		typescript
+$ dir[K[K[Kcd dir1/
+$ ls
+file1.text	file2.text	file3.text
+$ cp file[K[K[K[K*file[K[K[K[K[Kfile* ../dir2/
+$ cd ..
+$ cd dir2/
+$ ls
+file1.text	file2.text	file3.text
+$ cd ..
+$ ls
+dir1		dir2		typescript
+$ clear
+[H[2J$ ls
+dir1		dir2		typescript
+$ clear
+[H[2J$ mkdir dir3
+$ ls
+dir1		dir2		dir3		typescript
+$ cd dir1/
+$ ls
+file1.text	file2.text	file3.text
+$ cd ..
+$ cd dir3/
+$ cat file1.text
+cat: file1.text: No such file or directory
+$ ls
+$ c[Kcat > file1,[K.text
+hello
+this is file 1
+^D$ cd ..
+$ cd dir1/
+$ ls
+file1.text	file2.text	file3.text
+$ cp -i file1.text ../die[Kr2/
+overwrite ../dir2/file1.text? (y/n [n]) yes
+$ cd ..
+$ ls
+dir1		dir2		dir3		typescript
+$ cd dir3/
+$ ls
+file1.text
+$ cat file1.text 
+hello
+this is file 1
+$ cd ..
+$ ls
+dir1		dir2		dir3		typescript
+$ cd dir1/
+$ ls
+file1.text	file2.text	file3.text
+$ rm fil1[Ke1.text 
+$ ls
+file2.text	file3.text
+$ rm *
+$ ls
+$ cd ..
+$ ls
+dir1		dir2		dir3		typescript
+$ ls
+dir1		dir2		dir3		typescript
+You have new mail in /var/mail/vishnukumar
+$ clear
+[H[2J$ ls
+dir1		dir2		dir3		typescript
+$ cd dir1/
+$ ls
+$ cat > file1.text
+hello
+this is file 1 of f dir 2 1
+^D$ 
+$ ls
+file1.text
+$ mv file1.text file11.text
+$ ls
+file11.text
+$ cat file11.text 
+hello
+this is file 1 of dir 1
+$ cd ..
+$ ls
+dir1		dir2		dir3		typescript
+$ mv dir1/[K dir11
+$ ls
+dir11		dir2		dir3		typescript
+$ ld[Ks
+dir11		dir2		dir3		typescript
+$ cd dor11[K[K[K[Kir11/
+$ ls
+file11.text
+$ file file11.text 
+file11.text: ASCII text
+$ wc -l < file11.text 
+       2
+$ wc -l file11.text 
+       2 file11.text
+$ ls
+file11.text
+$ cd ..
+$ ls
+dir11		dir2		dir3		typescript
+$ cd dir3
+$ ls
+file1.text
+$ cd ..
+$ cd dir2
+$ ls
+file1.text	file2.text	file3.text
+$ clear
+[H[2J$ di[K[Kcat file1.text 
+hello
+i am vishnu
+i am done with this life
+
+$ cat file2.text
+hello
+i am vishnu
+i am done with this life
+
+$ cat >[K> file2.text
+hello
+this is file            i am vishnu 
+this is file2
+^D$ 
+$ cat file2.tet[Kxt
+hello
+i am vishnu 
+this is file2
+$ cat file1.text 
+hello
+i am vishnu
+i am done with this life
+
+$ s
+bash: s: command not found
+$ ls
+file1.text	file2.text	file3.text
+$ l
+bash: l: command not found
+$ ls
+file1.text	file2.text	file3.text
+$ diff file1.text file2.text 
+2,4c2,3
+< i am vishnu
+< i am done with this life
+< 
+---
+> i am vishnu 
+> this is file2
+$ comm file[K[K[K[Kfile[K[K[K[K[K[K[K[K[Kls
+file1.text	file2.text	file3.text
+$ cmp di[K[Kfile1.text file2.text 
+file1.text file2.text differ: char 18, line 2
+$ comm file1.text file2.text 
+		hello
+i am vishnu
+i am done with this life
+
+	i am vishnu 
+	this is file2
+$ ls
+file1.text	file2.text	file3.text
+$ cd ..
+$ ls
+dir11		dir2		dir3		typescript
+$ gzi [Kp dir11
+gzip: dir11 is a directory
+$ ls
+dir11		dir2		dir3		typescript
+$ cd dir11/
+$ ls
+file11.text
+$ gzi [Kp file11.text 
+$ ls
+file11.text.gz
+$ unzip file11.text.gz 
+Archive:  file11.text.gz
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of file11.text.gz or
+        file11.text.gz.zip, and cannot find file11.text.gz.ZIP, period.
+$ ls
+file11.text.gz
+$ gunzip d[Kfile11.text.gz 
+$ ls
+file11.text
+$ ls
+file11.text
+$ w[Kod file1.r[Kt[K[K1[K1.text 
+0000000    062550  066154  005157  064164  071551  064440  020163  064546
+0000020    062554  030440  067440  020146  064544  020162  005061        
+0000036
+$ exit
+exit
+
+Script done on Tue Nov 15 19:39:19 2022
